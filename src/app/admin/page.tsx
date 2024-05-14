@@ -19,6 +19,7 @@ const getSalesData = async () => {
     numberOfSales: data._count,
   }
 }
+
 const getUserData = async () => {
   const [userCount, orderData] = await Promise.all([
     db.user.count(),
